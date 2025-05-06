@@ -8,7 +8,7 @@ public class ShiftManager : MonoBehaviour
     public GameObject whitePlatforms;          // White platform group
     public GameObject blackPlatforms;          // Black platform group
     public GameObject playerPrefab;            // Player prefab
-
+    public GameObject exit;
     private GameObject currentPlayer;
     private bool isWhiteWorld = true;
     private bool isShifting = false;
@@ -33,7 +33,14 @@ public class ShiftManager : MonoBehaviour
     private IEnumerator ShiftWorld()
     {
         isShifting = true;
-
+        if (isWhiteWorld)
+        {
+            exit.transform.SetParent(blackPlatforms.transform);
+        }
+        else
+        {
+            exit.transform.SetParent(whitePlatforms.transform);
+        }
         // Detach platforms so they don't rotate with worldRoot
         whitePlatforms.transform.SetParent(null);
         blackPlatforms.transform.SetParent(null);
@@ -68,12 +75,10 @@ public class ShiftManager : MonoBehaviour
         if (isWhiteWorld)
         {
             currentPlayer = Instantiate(playerPrefab, new Vector3(savedPosition.x,savedPosition.y + 1f,savedPosition.z) , Quaternion.identity);
-            //currentPlayer.GetComponent<PlayerController>().jumpForce = Mathf.Abs(currentPlayer.GetComponent<PlayerController>().jumpForce);
         }
         else
         {
             currentPlayer = Instantiate(playerPrefab, new Vector3(savedPosition.x, savedPosition.y + 1f, savedPosition.z), Quaternion.identity);
-            //currentPlayer.GetComponent<PlayerController>().jumpForce = Mathf.Abs(currentPlayer.GetComponent<PlayerController>().jumpForce);
         }
         virtualCamera.m_Follow = currentPlayer.transform;
         isWhiteWorld = !isWhiteWorld;

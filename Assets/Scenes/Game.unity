@@ -5412,6 +5412,7 @@ MonoBehaviour:
   blackPlatforms: {fileID: 1100722532}
   playerPrefab: {fileID: 952431397223879609, guid: 98c39b5a23d77d14181c2604ae036d90,
     type: 3}
+  exit: {fileID: 1794614052}
   savedPosition: {x: 0, y: 0, z: 0}
   virtualCamera: {fileID: 769027322}
 --- !u!4 &791660346
@@ -6389,7 +6390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &934550039
 Transform:
   m_ObjectHideFlags: 0
@@ -7330,7 +7331,6 @@ Transform:
   - {fileID: 1982143821}
   - {fileID: 25136083}
   - {fileID: 1824889536}
-  - {fileID: 1794614053}
   - {fileID: 2096196491}
   - {fileID: 1007299503}
   - {fileID: 871802950}
@@ -10324,12 +10324,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794614052}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1100722533}
+  m_Father: {fileID: 1871429255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1794614054
 BoxCollider:
@@ -11376,6 +11376,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1794614053}
   - {fileID: 1100722533}
   - {fileID: 292754350}
   - {fileID: 934550039}
