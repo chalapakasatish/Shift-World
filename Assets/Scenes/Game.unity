@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 6225fa8890cf025489e57d3aa1d87260, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c7a8e24b01cf73e4bad6eb3cb7d40acc, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2369,7 +2369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -7}
+  m_FollowOffset: {x: 0, y: 0, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -5477,7 +5477,7 @@ Transform:
   m_GameObject: {fileID: 769027321}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -7}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5626,6 +5626,8 @@ MonoBehaviour:
   exit: {fileID: 1794614052}
   savedPosition: {x: 0, y: 0, z: 0}
   virtualCamera: {fileID: 769027322}
+  whiteMaterial: {fileID: 2100000, guid: c7a8e24b01cf73e4bad6eb3cb7d40acc, type: 2}
+  blackMaterial: {fileID: 2100000, guid: 95682259aa151254c8433c93157a7d04, type: 2}
 --- !u!4 &791660346
 Transform:
   m_ObjectHideFlags: 0
@@ -6918,7 +6920,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -7}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7603,7 +7605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1100722533
 Transform:
   m_ObjectHideFlags: 0

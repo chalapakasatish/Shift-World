@@ -15,6 +15,7 @@ public class ShiftManager : MonoBehaviour
     private float rotationSpeed = 180f;        // degrees per second
     public Vector3 savedPosition;
     public CinemachineVirtualCamera virtualCamera; // Reference to the virtual camera
+    public Material whiteMaterial,blackMaterial;
     private void Start()
     {
         whitePlatforms.SetActive(true);
@@ -36,10 +37,12 @@ public class ShiftManager : MonoBehaviour
         if (isWhiteWorld)
         {
             exit.transform.SetParent(blackPlatforms.transform);
+            RenderSettings.skybox = blackMaterial;
         }
         else
         {
             exit.transform.SetParent(whitePlatforms.transform);
+            RenderSettings.skybox = whiteMaterial;
         }
         // Detach platforms so they don't rotate with worldRoot
         whitePlatforms.transform.SetParent(null);
