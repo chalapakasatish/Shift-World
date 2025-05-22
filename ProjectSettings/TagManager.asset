@@ -4,7 +4,25 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
+  - MainMenuPanelBuild
+  - MainMenuPanelPlay
+  - MainMenuPanelSavegames
+  - MainMenuPanelProfile
+  - MainMenuPanelSettings
+  - MainMenuPanelHome
+  - User
+  - Webview
+  - NonEditorUi
+  - tank
+  - InvisibleWall
+  - SoccerBall
+  - AvatarButtonDebug
+  - SceneryTarget
+  - MissileTarget
+  - box
+  - Shell
+  - jianta
+  - posui
   layers:
   - Default
   - TransparentFX
@@ -12,32 +30,32 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - X_Asset
+  - Surface
+  - FlightCalculator
+  - Slingshot
+  - AssetGhost
+  - UIButtonColliders
+  - X_Asset_Dragging
+  - SnappingPoint
+  - MotionBlurExclude
+  - Vehicle
+  - Wheel
+  - Gizmo
+  - Ambassador
+  - Portrait
+  - Projectile
+  - FirstPersonWeapon
+  - X_FractionAsset
+  - X_PickupAsset
+  - GroundChunkOverlap
+  - DeadAsset
+  - Occluder Colliders
+  - HeadShot
+  - NoHitbox
   m_SortingLayers:
   - name: Default
     uniqueID: 0
