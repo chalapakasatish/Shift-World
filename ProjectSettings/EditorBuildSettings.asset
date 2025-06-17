@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/StruckdImport/Scenes/BootUp.unity
-    guid: 3dc1cbf617e85a741a70acf678ccc593
-  - enabled: 1
-    path: Assets/StruckdImport/Scenes/Game.unity
-    guid: a83141436d368b94c9acac8c293a4a83
+    path: Assets/Scenes/Game.unity
+    guid: c850ee8c3b14cc8459e7e186857cf567
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e0a03a11d76af2d4aa1bdbb84b082aaf,
       type: 2}

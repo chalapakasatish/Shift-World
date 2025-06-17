@@ -76,10 +76,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1532cca2a1c52cb40bd9cb79341103ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 10
+  moveForce: 30
   airControlMultiplier: 1
   maxSpeed: 5
-  jumpForce: 7
+  jumpForce: 8
   maxJumps: 1
   dashForce: 10
   dashCooldown: 1
@@ -87,13 +87,13 @@ MonoBehaviour:
   wallJumpDirection: {x: 1, y: 1, z: 0}
   wallLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   wallCheckDistance: 0.5
   groundCheck: {fileID: 2487353120843719991}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
 --- !u!1 &1406848179933893436
 GameObject:
   m_ObjectHideFlags: 0
