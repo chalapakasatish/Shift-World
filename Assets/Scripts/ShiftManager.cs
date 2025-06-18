@@ -26,7 +26,7 @@ public class ShiftManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isShifting)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isShifting && PlayerController.isGrounded)
         {
             StartCoroutine(ShiftWorld());
         }

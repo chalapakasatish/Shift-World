@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.3f;
     public LayerMask groundLayer;
 
-    private bool isGrounded;
+    public static bool isGrounded;
     private bool isTouchingWall;
     private Rigidbody rb;
     private float inputX;
